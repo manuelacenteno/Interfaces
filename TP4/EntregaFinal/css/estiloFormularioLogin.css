@@ -1,8 +1,4 @@
 @media only screen and (min-width:600px) {
-    .linkEntrar {
-        text-decoration: none;
-        color: #ffffff;
-    }
     .fondo {
         background: rgba(48, 48, 48, 0.5);
         position: fixed;
@@ -17,6 +13,8 @@
         display: none;
         /*display: contents;*/
         justify-content: center;
+        /*z-index: 2;*/
+        /*margin-top: 100px;*/
     }
     .container2 {
         display: flex;
@@ -235,5 +233,18 @@
     }
     button {
         cursor: pointer;
+    }
+    .linkEntrar {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    label {
+        color: white;
+    }
+    h3 {
+        color: #ffffff;
+    }
+    li {
+        color: white;
     }
 }
