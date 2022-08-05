@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloLoader.css">
+    <link rel="stylesheet" href="css/estiloNavBar.css">
+    <link rel="stylesheet" href="css/estiloPerfil.css">
+    <link rel="stylesheet" href="css/estiloPublicidad.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="barra nav-bar">
+
+            <div class="logo">
+                <a href="index.html"><img class="imagenLogo" src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="iconoPerfil">
+                <a href=""><img src="img/iconoPerfil.png" alt="Perfil"></a>
+
+            </div>
+
+            <div class="lista">
+                <ul class="menuLineal">
+                    <li>
+                        <a><img class="btn-bar" src="img/Categorias.png"></a>
+                        <ul class="dropdowns">
+                            <a href="categoria.html"><img class="btn-cat" src="img/Accion.png" alt=""></a>
+                            <a href="categoria.html"><img class="btn-cat" src="img/Aventuras.png" alt=""></a>
+                            <a href="categoria.html"><img class="btn-cat" src="img/Multijugador.png" alt=""></a>
+                            <a href="categoria.html"><img class="btn-cat" src="img/Clasicos.png" alt=""></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="buscar.html"><img class="btn-bar" src="img/Buscar.png"></a>
+                    </li>
+
+                    <li>
+                        <a><img class="btn-bar2" src="img/Perfil.png"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="destacado">
+        <div class="destacado1">
+            <div class="titulo">
+                <h1>Mi Juego Más Jugado</h1>
+            </div>
+
+            <div>
+
+                <a><img src="img/cuatroLinea.jpg"></a>
+            </div>
+        </div>
+        <div class="destacado2">
+            <div class="nombreJuego">
+                <h2>4 En Linea</h2>
+            </div>
+
+            <div class="descripcion">
+                <p>El juego de 4 en linea consiste en alinear 4 fichas de un mismo color en un tablero vertical. Cada jugador tiene fichas de un color, y por turnos, debe introducir una ficha en la columna que decida, la ficha caerá hasta la posición libre
+                    más baja. Si una columna está llena ya no se pondrán introducir más.</p>
+            </div>
+
+
+            <div class="btn">
+                <!-- <a [routerLink]="['/juego']"><button class="btnJugar">Jugar</button></a> -->
+                <a href="cuatroLinea.html"><button class="btnJugar">Jugar</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="lista3">
+        <!--<div class="h2titulo">
+            <h2>Mis favoritos</h2>
+        </div>-->
+        <div class="slider">
+
+            <input type="radio" name="testimonial" id="t-1" />
+            <input type="radio" name="testimonial" id="t-2" />
+            <input type="radio" name="testimonial" id="t-3" checked />
+            <input type="radio" name="testimonial" id="t-4" />
+            <input type="radio" name="testimonial" id="t-5" />
+            <div class="testimonials mb-8">
+                <label class="item" for="t-1">
+                      <div class="mycard">
+                        <div>
+                          <a href="cuatroLinea.html"><img src="img/JuegosClasico/cuatroLinea.jpg" alt="nivel5" class="cardimg" /></a>
+                        </div>
+                        <div>
+                          <p class="carddescription">4 en Linea</p>
+                        </div>
+                      </div>
+                    </label>
+                <label class="item" for="t-2">
+                      <div class="mycard">
+                        <div>
+                          <img src="img/JuegosClasico/MarioBros.webp" alt="nivel5" class="cardimg" />
+                        </div>
+                        <div>
+                          <p class="carddescription">Super Mario World Online</p>
+                        </div>
+                      </div>
+                    </label>
+                <label class="item" for="t-3">
+                      <div class="mycard">
+                        <div>
+                          <img src="img/JuegosAccion/Squid.webp" alt="nivel5" class="cardimg" />
+                        </div>
+                        <div>
+                          <p class="carddescription">Squid Game: El Juego del Calamar</p>
+                        </div>
+                      </div>
+                    </label>
+                <label class="item" for="t-4">
+                      <div class="mycard">
+                        <div>
+                          <img src="img/JuegosAventura/Amongus.webp" alt="nivel5" class="cardimg" />
+                        </div>
+                        <div>
+                          <p class="carddescription">Among us</p>
+                        </div>
+                      </div>
+                    </label>
+                <label class="item" for="t-5">
+                      <div class="mycard">
+                  
+                        <div>
+                          <img src="img/JuegosAventura/DragonBall.jpg" alt="nivel5" class="cardimg" />
+                        </div>
+                        <div>
+                          <p class="carddescription">Dragon Ball:Advance Adventure</p>
+                        </div>
+                        </div>
+                    </label>
+            </div>
+            <div class="dots">
+                <label for="t-1"></label>
+                <label for="t-2"></label>
+                <label for="t-3"></label>
+                <label for="t-4"></label>
+                <label for="t-5"></label>
+            </div>
+
+        </div>
+    </section>
+    <div class="grid">
+        <div class="imgPublicidad">
+            <img class="imgPublicidad2" src="img/propaganda.jpg" alt="Publicidad">
+        </div>
+        <div class="imgPublicidad">
+            <img class="imgPublicidad2" src="img/propaganda2.jpg" alt="Publicidad">
+        </div>
+        <div class="imgPublicidad">
+            <img class="imgPublicidad2" src="img/propaganda-3.jpg" alt="Publicidad">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="img">
+            <img class="imagenLogo" src="img/logo.png" alt="Logo">
+        </div>
+
+        <div class="grupo">
+            <h4>Grupo 13-Todos los derechos reservados</h4>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
