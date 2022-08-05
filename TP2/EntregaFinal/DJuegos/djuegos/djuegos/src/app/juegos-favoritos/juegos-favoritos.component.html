@@ -1,0 +1,91 @@
+<!-- <section>
+    <div class="lista">
+        <div class="linea">
+            <h2>Mis juegos favoritos</h2>
+        </div>
+
+        <div class="listaCard" *ngFor="let juego of juegos.slice(0,5)">
+            <div class="card">
+                <div>
+                    <img width="225px" height="150px" [src]="juego.imagen" [alt]="juego.nombre">
+                </div>
+                <div>
+                    <p class="juegoNombre">{{juego.nombre}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="lista">
+    <div class="slider">
+        <input type="radio" name="testimonial" id="t-1" />
+        <input type="radio" name="testimonial" id="t-2" />
+        <input type="radio" name="testimonial" id="t-3" checked />
+        <input type="radio" name="testimonial" id="t-4" />
+        <input type="radio" name="testimonial" id="t-5" />
+        <div class="testimonials mb-8">
+            <label class="item" for="t-1">
+        <div class="mycard">
+          
+          <div>
+            <img src="assets/img/JuegosClasico/cuatroLinea.jpg" alt="nivel5" class="cardimg" />
+          </div>
+          <div>
+            <p class="carddescription">4 en Linea</p>
+          </div>
+        </div>
+      </label>
+            <label class="item" for="t-2">
+        <div class="mycard">
+          
+          <div>
+            <img src="assets/img/JuegosClasico/MarioBros.webp" alt="nivel5" class="cardimg" />
+          </div>
+          <div>
+            <p class="carddescription">Super Mario World Online</p>
+          </div>
+        </div>
+      </label>
+            <label class="item" for="t-3">
+        <div class="mycard">
+          
+          <div>
+            <img src="assets/img/JuegosAccion/Squid.webp" alt="nivel5" class="cardimg" />
+          </div>
+          <div>
+            <p class="carddescription">Squid Game: El Juego del Calamar</p>
+          </div>
+        </div>
+      </label>
+            <label class="item" for="t-4">
+        <div class="mycard">
+        
+          <div>
+            <img src="assets/img/JuegosAventura/Amongus.webp" alt="nivel5" class="cardimg" />
+          </div>
+          <div>
+            <p class="carddescription">Among us</p>
+          </div>
+        </div>
+      </label>
+            <label class="item" for="t-5">
+        <div class="mycard">
+          
+          <div>
+            <img src="assets/img/JuegosAventura/DragonBall.jpg" alt="nivel5" class="cardimg" />
+          </div>
+          <div>
+            <p class="carddescription">Dragon Ball:Advance Adventure</p>
+          </div>
+        </div>
+      </label>
+        </div>
+        <div class="dots">
+            <label for="t-1"></label>
+            <label for="t-2"></label>
+            <label for="t-3"></label>
+            <label for="t-4"></label>
+            <label for="t-5"></label>
+        </div>
+    </div>
+</section>

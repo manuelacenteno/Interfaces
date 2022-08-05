@@ -1,0 +1,229 @@
+.juego {
+    margin-top: 0;
+}
+
+.juegoPpal {
+    width: 100%;
+}
+
+.controles {
+    display: none;
+}
+
+.descripcion {
+    margin: 3% 3% 0;
+}
+
+.descripcion h3 {
+    text-align: center;
+    background-color: #582A72;
+    color: white;
+}
+
+.descripcion p {
+    margin-top: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 25px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.btn-fav {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-compartir {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+}
+
+.like {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-like {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: transparent;
+    transition: transform 4s, background-color 5s;
+}
+
+.btn-like:focus {
+    transform: scale(1.2);
+    background-color: blue;
+}
+
+.noLike {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+
+.btn-noLike {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: transparent;
+    transition: transform 4s, background-color 5s;
+}
+
+.btn-noLike:focus {
+    transform: scale(1.2);
+    background-color: red;
+}
+
+@media only screen and (min-width:600px) {
+    .juego {
+        margin-top: 150px;
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        background-color: rgba(88, 42, 114, 0.8);
+        color: white;
+    }
+    .juegoPpal {
+        height: 100%;
+        width: 100%;
+    }
+    .parteDerecha {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .botones {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+    img {
+        margin: auto;
+    }
+    .controles {
+        display: grid;
+        grid-template-rows: 0.6fr 0.75fr 1fr;
+        margin-top: 4%;
+    }
+    .controlTeclado {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .controlMouse {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .descripcion>p {
+        text-align: justify;
+        overflow-y: scroll;
+        height: -webkit-fill-available;
+        text-overflow: ellipsis;
+        white-space: break-spaces;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .descripcion>p::-webkit-scrollbar {
+        display: none;
+    }
+    .descripcion {
+        height: 160px;
+        margin-bottom: 50px;
+    }
+    /*LISTA SIMILARES*/
+    .lista2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        margin-left: 2%;
+        margin-right: 2%;
+        animation: lista5 5s linear infinite 0s;
+        -moz-animation: lista5 5s linear infinite 0s;
+        -webkit-animation: lista5 5s linear infinite 0s;
+    }
+    @keyframes lista5 {
+        0% {
+            box-shadow: 0px 0px 5px #582A72;
+        }
+        20% {
+            box-shadow: 0px 0px 20px #582A72;
+        }
+        50% {
+            box-shadow: 0px 0px 30px #582A72;
+        }
+        60% {
+            box-shadow: 0px 0px 50px #582A72;
+        }
+        70% {
+            box-shadow: 0px 0px 30px #582A72;
+        }
+        80% {
+            box-shadow: 0px 0px 20px #582A72;
+        }
+        100% {
+            box-shadow: 0px 0px 5px #582A72;
+        }
+    }
+    .linea {
+        font-size: 20px;
+        margin-top: 9px;
+        height: 50px;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .listaCard {
+        /*grid-row: 2;*/
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 0;
+        /*column-gap: 1em;*/
+    }
+    p.juegoNombre {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .card {
+        margin-left: 22px;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 228px;
+        height: 200px;
+    }
+    .imgCard {
+        border-radius: 5px;
+    }
+    .card:hover {
+        border: 3px solid #582A72;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .nombre {
+        height: 50px;
+        width: 225px;
+        justify-items: center;
+    }
+}

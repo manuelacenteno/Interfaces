@@ -1,0 +1,38 @@
+<header>
+  
+    <nav class="barra nav-bar">
+        
+        <div class="logo" >
+            <a href=""><img class="imagenLogo" src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        <div class="iconoPerfil">
+            <a href=""><img src="assets/img/iconoPerfil.png" alt="Perfil"></a>
+
+        </div>
+
+        <div class="lista">
+            <ul class="menuLineal">
+                <li>
+                    <a><img class="btn-bar" src="assets/img/Categorias.png"></a>
+                    <ul class="dropdowns">
+                        <a [routerLink]="['/accion']"><img class="btn-cat" src="assets/img/Accion.png" alt=""></a>
+                        <a [routerLink]="['/aventuras']"><img class="btn-cat" src="assets/img/Aventuras.png" alt=""></a>
+                        <a [routerLink]="['/multijugador']"><img class="btn-cat" src="assets/img/Multijugador.png" alt=""></a>
+                        <a [routerLink]="['/clasicos']"><img class="btn-cat" src="assets/img/Clasicos.png" alt=""></a>
+                    </ul>
+                </li>
+
+                <li style="position: relative;right: 15px;">
+                    <a [routerLink]="['/busqueda']"><img class="btn-bar" src="assets/img/Buscar.png"></a>
+                </li>
+
+                <li (click)="openLogin()">
+                    <a style="cursor: pointer;"><img class="btn-bar2" src="assets/img/Perfil.png"></a>
+                </li>
+                <div *ngIf="abrirOpcion==true">
+                    <app-form-login></app-form-login>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,35 @@
+<div [ngStyle]='{"display":notFound}'>
+    <app-loading2></app-loading2>
+</div>
+<div class="destacado">
+
+    <div class="destacado1">
+        <div class="titulo">
+            <h1>Mi Juego Más Jugado</h1>
+        </div>
+
+        <div>
+
+            <a [routerLink]="['/juego']"><img src="assets/img/juegoMasJugado.png"></a>
+        </div>
+    </div>
+    <div class="destacado2">
+        <div class="nombreJuego">
+            <h2>4 En Linea</h2>
+        </div>
+
+        <div class="descripcion">
+            <p>El juego de 4 en linea consiste en alinear 4 fichas de un mismo color en un tablero vertical. Cada jugador tiene fichas de un color, y por turnos, debe introducir una ficha en la columna que decida, la ficha caerá hasta la posición libre más
+                baja. Si una columna está llena ya no se pondrán introducir más.</p>
+        </div>
+
+
+        <div class="btn">
+            <a [routerLink]="['/juego']"><button class="btnJugar">Jugar</button></a>
+        </div>
+    </div>
+
+
+</div>
+
+<app-juegos-favoritos></app-juegos-favoritos>

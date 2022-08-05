@@ -1,0 +1,27 @@
+<div class="lista">
+    <div class="linea" *ngIf="desk==true">
+        <h2>Juegos similares</h2>
+    </div>
+    <div class="linea" *ngIf="desk==false">
+        <h2>Juego similar</h2>
+    </div>
+    <ng-template [ngIf]="desk==true" [ngIfElse]="Mobile"><div class="listaCard" *ngFor="let juego of juegos.slice(0,5)" >
+        <div class="card">
+            <div>
+                <img [src]="juego.imagen" [alt]="juego.nombre">
+            </div>
+            <div>
+                <p class="juegoNombre">{{juego.nombre}}</p>
+            </div>
+        </div>
+    </div></ng-template>
+    <ng-template #Mobile><div class="listaCard" *ngFor="let juego of juegos.slice(0,1)" >
+        <div class="card">
+            <div>
+                <img [src]="juego.imagen" [alt]="juego.nombre">
+            </div>
+            <div>
+                <p class="juegoNombre">{{juego.nombre}}</p>
+            </div>
+        </div></div></ng-template>
+</div>

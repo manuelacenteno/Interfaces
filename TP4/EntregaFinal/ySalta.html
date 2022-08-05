@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estiloNavBar.css">
+    <link rel="stylesheet" href="css/estiloLoader.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/estiloBenJunta.css">
+    <link rel="stylesheet" href="css/estiloPublicidad.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="barra nav-bar">
+
+            <div class="logo">
+                <a href="index.html"><img class="imagenLogo" src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="iconoPerfil">
+                <a href=""><img src="img/iconoPerfil.png" alt="Perfil"></a>
+
+            </div>
+
+            <div class="lista">
+                <ul class="menuLineal">
+                    <li>
+                        <a><img class="btn-bar" src="img/Categorias.png"></a>
+                        <ul class="dropdowns">
+                            <a href="categoria.html"><img class="btn-cat" src="img/Accion.png" alt=""></a>
+                            <a href="categoria.html"><img class="btn-cat" src="img/Aventuras.png" alt=""></a>
+                            <a href="categoria.html"><img class="btn-cat" src="img/Multijugador.png" alt=""></a>
+                            <a href="categoria.html"><img class="btn-cat" src="img/Clasicos.png" alt=""></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="buscar.html"><img class="btn-bar" src="img/Buscar.png"></a>
+                    </li>
+
+                    <li>
+                        <a><img class="btn-bar2" src="img/Perfil.png"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- LOADING -->
+    <section id="fondo" class="fondo">
+        <div class="dancing-lao">
+            <div class="left-dots">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="circle-dot"></div>
+            </div>
+            <div class="right-dots">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="circle-dot"></div>
+            </div>
+
+            <img class="logoLoad" src="img/minilogo - copia.png" alt="Logo">
+
+        </div>
+    </section>
+
+
+    <section class="juego">
+        <div>
+            <div>
+                <div class="controlesJuego">
+                    <div class="nJuego">
+                        <h2> Y Salta</h2>
+
+                    </div>
+
+                    <div>
+                        <div class="colorPuntaje">Puntaje: <span id="puntaje">0</span> </div>
+                        <p>Tiempo:<span id="timer"></span></p>
+                    </div>
+                    <div>
+                        <a href="" id="reiniciar"><img width="50px" height="50px" src="img/IconoReset2.png" alt="Boton Re-Iniciar"></a>
+
+                    </div>
+
+                </div>
+
+                <div class="juegoPal">
+                    <div id="layer3" class="layer layer3"></div>
+                    <div id="layer2" class="layer layer2"></div>
+                    <div id="layer1" class="layer layer1">
+                        <div id="personaje" class="nena-corriendo"></div>
+                        <!-- class="nena-corriendo"-->
+                        <!-- <div id="moneda"></div>
+                        <div id="bomba"></div>-->
+                    </div>
+                    <div class="elementos"> </div>
+                </div>
+
+            </div>
+            <div class="cartelInicio">
+                <div class="center">
+                    <label for="">Elegir personaje</label>
+                    <div class="seleccionPersonaje">
+                        <div class="imgNena seleccion"><img src="img/imgGame/nena.png" alt="Nena"></div>
+                        <div class="imgNene"><img src="img/imgGame/nene.png" alt="Nene"></div>
+                    </div>
+                    <button id="iniciar" class="dismiss">Empezar</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="fin">
+            <img src="img/imgGame/perdedor.png" alt="Perdedor">
+            <p><span id="puntaje2">0</span></p>
+        </div>
+
+        <div class="parteDerecha">
+            <div>
+                <div class="controles">
+                    <div>
+                        <h3>Controles</h3>
+                    </div>
+                    <div class="controles2">
+                        <div class="controlTeclado">
+                            <img width="50px" height="50px" src="img/Teclado.png" alt="Control usando teclado">
+                            <p>Usar</p>
+                            <p>Tecla Flecha Arriba </p>
+                            <p>Tecla Espacio </p>
+                            <p>Tecla W</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <h3>Descripcion</h3>
+
+                    <p>Salta todas las piedras que puedas sin colisionar en un tiempo determinado</p>
+                </div>
+            </div>
+            <div class="botones">
+                <button class="btn-fav"> <img width="50px" height="50px" src="img/Favorito.png" alt="Boton favorito"> </button>
+                <button class="btn-compartir"> <img width="50px" height="50px" src="img/Compartir.png" alt="Boton compartir"> </button>
+                <button class="btn-like">  <img class="like" src="img/Like2.png" alt="Boton me gusta"> </button>
+                <button class="btn-noLike"> <img class="noLike" src="img/Like2.png" alt="Boton no me gusta"> </button>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="grid">
+        <div class="imgPublicidad">
+            <img class="imgPublicidad2" src="img/propaganda.jpg" alt="Publicidad">
+        </div>
+        <div class="imgPublicidad">
+            <img class="imgPublicidad2" src="img/propaganda2.jpg" alt="Publicidad">
+        </div>
+        <div class="imgPublicidad">
+            <img class="imgPublicidad2" src="img/propaganda-3.jpg" alt="Publicidad">
+        </div>
+    </div>
+    <section class="lista2">
+
+
+        <div class="linea">
+            <h2>Juegos Similares</h2>
+        </div>
+
+
+        <div class="listaCard">
+            <div class="card">
+                <div>
+                    <img class="imgCard" width="225px" height="150px" src="img/similaresFlappy/3D.jpg" alt="Juego">
+                </div>
+                <div class="nombre">
+                    <p class="juegoNombre">Flappy Bird 3D</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img width="225px" height="150px" src="img/similaresFlappy/Abejita.jpg" alt="Juego">
+                </div>
+                <div class="nombre">
+                    <p class="juegoNombre">Flappy Abejita</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img width="225px" height="150px" src="img/similaresFlappy/images.jpg" alt="Juego">
+                </div>
+                <div class="nombre">
+                    <p class="juegoNombre">Flappy Bird</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img width="225px" height="150px" src="img/similaresFlappy/robio.jpg" alt="Juego">
+                </div>
+                <div class="nombre">
+                    <p class="juegoNombre">Juego Robio</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img width="225px" height="150px" src="img/similaresFlappy/skip.jpg" alt="Juego">
+                </div>
+                <div class="nombre">
+                    <p class="juegoNombre">Flappy Bird Skip To 999</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <script src="js/jsLoading/loading.js"></script>
+    <script src="js/jsYsalta/main.js"></script>
+    <script src="js/jsYsalta/Elemento.js"></script>
+    <script src="js/jsYsalta/Personaje.js"></script>
+    <script src="js/jsYsalta/Temporizador.js"></script>
+
+</body>
+
+</html>

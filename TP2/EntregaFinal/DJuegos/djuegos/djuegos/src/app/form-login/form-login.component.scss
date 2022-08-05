@@ -1,0 +1,234 @@
+@media only screen and (min-width:600px) {
+    .fondo {
+        background: rgba(48, 48, 48, 0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .modalForm {
+        display: contents;
+        justify-content: center;
+    }
+    .container2 {
+        display: flex;
+        align-items: center;
+    }
+    .container1 {
+        margin-top: 30px;
+    }
+    .form {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border: 1px solid black;
+        height: 590px;
+        width: 860px;
+        margin: auto;
+    }
+    .container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*primer div*/
+    .animacion {
+        background-color: #5772AC;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 590px;
+        animation: reboteIn_izquierda 3s;
+    }
+    /* Creamos la animación ReboteIn Izquierda (con keyframes) */
+    @keyframes reboteIn_izquierda {
+        0% {
+            opacity: 0;
+            transform: translateX(-100vw);
+        }
+        50% {
+            transform: translateX(30px);
+            opacity: 1;
+        }
+        70% {
+            transform: translateX(-10px);
+        }
+    }
+    .animacion container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -64.5px;
+        margin-top: -85.5px;
+    }
+    .ghost {
+        animation: float 3s ease-out infinite;
+    }
+    .path {
+        display: flex;
+        justify-content: center;
+    }
+    @keyframes float {
+        50% {
+            transform: translate(0, 20px);
+        }
+    }
+    .shadowFrame {
+        width: 130px;
+        margin-top: 15px;
+    }
+    .shadow {
+        animation: shrink 3s ease-out infinite;
+        transform-origin: center center;
+        ellipse {
+            transform-origin: center center;
+        }
+        box-shadow: none !important;
+    }
+    @keyframes shrink {
+        0% {
+            width: 90%;
+            margin: 0 5%;
+        }
+        50% {
+            width: 60%;
+            margin: 0 18%;
+        }
+        100% {
+            width: 90%;
+            margin: 0 5%;
+        }
+    }
+    .animacion h3 {
+        font-size: 20px;
+        font-style: italic;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+    .animacion ul {
+        color: #ffffff;
+        list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+        margin-left: 20px;
+    }
+    /*segundo div*/
+    .efectoAnimacion {
+        background-image: url("./../../assets/img/fondoLogin.png");
+        background-size: cover;
+        float: right;
+        animation: reboteIn_derecha 3s;
+    }
+    /* Creamos la animación ReboteIn Derecha (con keyframes) */
+    /*@keyframes reboteIn_derecha {
+        0% {
+            opacity: 0;
+            transform: translateY(100vw);
+        }
+        10% {
+            transform: translateX(50px);
+            opacity: 1;
+        }
+        20% {
+            transform: translateX(50px);
+        }
+        30% {
+            transform: translateY(100px);
+        }
+        40% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateY(100px);
+        }
+    }*/
+    @keyframes reboteIn_derecha {
+        0% {
+            opacity: 0;
+            transform: translateY(100vw);
+        }
+        50% {
+            transform: translateX(-30px);
+            opacity: 1;
+        }
+        70% {
+            transform: translateY(10px);
+        }
+        /*100% {
+        transform: translateX(100vw);
+    }*/
+    }
+    .centrar {
+        display: flex;
+        justify-content: center;
+        margin-top: 130px;
+    }
+    .centrar2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 61px;
+    }
+    input {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        margin-top: 0;
+        width: 232px;
+        height: 39px;
+        box-shadow: -1px 2px rgba(0, 0, 0, 0.3);
+    }
+    .botonEntrar {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .btnEntrar {
+        border-radius: 30px;
+        background-color: #582A72;
+        color: white;
+        font-size: 20px;
+        width: 201px;
+        height: 56px;
+        box-shadow: -1px 2px rgba(255, 255, 255, 0.3);
+    }
+    .botonNo {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .btnNo {
+        border-radius: 8px;
+        background-color: #F0B510;
+        width: 352px;
+        height: 40px;
+        color: black;
+        font-size: 15px;
+        position: relative;
+        top: 140px;
+        left: 41px;
+        box-shadow: -1px 2px rgba(255, 255, 255, 0.3);
+    }
+    #btn-login {
+        top: 75px !important;
+    }
+    .btnCerrar {
+        position: relative;
+        left: 380px;
+        top: 10px;
+    }
+    .formRegistro {
+        background-image: url("./../../assets/img/fondoLogin.png");
+        background-size: cover;
+        float: right;
+    }
+    button {
+        cursor: pointer;
+    }
+}

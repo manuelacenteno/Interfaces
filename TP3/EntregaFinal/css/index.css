@@ -1,0 +1,142 @@
+/* JUEGO DESTACADO */
+
+@media only screen and (min-width:600px) {
+    .destacado {
+        margin-top: 140px;
+        width: 100%;
+        display: flex;
+        background-image: url("../img/fondo1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #FFFFFF;
+    }
+    .titulo {
+        margin-bottom: 2%;
+    }
+    .destacado1 {
+        margin: 2%;
+    }
+    h1 {
+        font-size: 40px;
+        margin-block-start: 0;
+    }
+    .descripcion {
+        margin: 0px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .destacado2 {
+        margin: 2%;
+        margin-right: 4%;
+    }
+    .nombreJuego {
+        margin-top: 90px;
+        margin-left: 20px;
+    }
+    .nombreJuego h2 {
+        font-size: 36px;
+    }
+    .jugar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnJugar {
+        font-size: 36px;
+        border-radius: 50px;
+        width: 245px;
+        height: 68px;
+        background-color: #F0B510;
+        opacity: 0.85;
+        box-shadow: -1px 2px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+    }
+    .btnJugar:hover {
+        animation: 5s click 1;
+    }
+    /* Creamos la animación (con keyframes) */
+    @keyframes click {
+        25%,
+        75% {
+            transform: scale(.8);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+    }
+    /* /*LISTA DE JUEGOS*/
+    /*.listaCard {
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 0;
+        
+    }
+    .lista2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        margin-left: 2%;
+        margin-right: 2%;
+        box-shadow: 0px 0px 20px #582A72;
+    }
+    .titulo {
+        display: flex;
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .btn-mas {
+        border: 2px solid #582A72;
+        border-radius: 30px;
+        color: #582A72;
+        font-size: 16px;
+    }
+    .linea {
+        font-size: 20px;
+        margin-top: 9px;
+        height: 50px;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .ver-mas {
+        margin-left: 1rem;
+    }
+    p.juegoNombre {
+        text-align: center;
+        margin-top: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .card {
+        margin-left: 22px;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 228px;
+        height: 200px;
+    }
+    .card img {
+        border-radius: 5px;
+    }
+    .card:hover {
+        border: 3px solid #582A72;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .nombre {
+        height: 50px;
+        width: 225px;
+        justify-items: center;
+    }*/
+}
